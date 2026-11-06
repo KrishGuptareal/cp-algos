@@ -1,7 +1,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
+// nodes are 1 indexed
 using ll = long long;
 
 // =====================================================
@@ -364,6 +364,7 @@ void solve() {
     // For PATH MAXIMUM:
     //hld<T,mergestruct> hld(n,identity)
     /*
+       
         Identity is a value that doesn't change the result when you merge it with another value.
         
         merge(a, identity) = a
