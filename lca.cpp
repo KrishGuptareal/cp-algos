@@ -80,9 +80,13 @@ int main() {
 
         return up[u][0];
     };
+    auto dist=[&](int x,int y){
+        return depth[x]+depth[y]-2*depth[lca(x,y)];
+    };
 
     binaryLifting(0, n);
 
     cout << lca(3, 5) << '\n';
     cout << lift(5, 2) << '\n';
+    cout<<dist(1,2)<<"\n";
 }
